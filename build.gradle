@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'io.freefair.lombok' version '6.0.0-m2'
+
+}
+
+group 'org.miroshkina'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ('com.fasterxml.jackson.core:jackson-core:2.20.1',
+                    'org.projectlombok:lombok:1.18.42')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation ('io.rest-assured:rest-assured:5.4.0',
+                        'com.fasterxml.jackson.core:jackson-databind:2.20.1',
+                        'org.assertj:assertj-core:3.27.7',
+                        'org.aeonbits.owner:owner:1.0.12',
+                        'org.projectlombok:lombok:1.18.42'
+    )
+
+}
+
+test {
+    useJUnitPlatform()
+}
