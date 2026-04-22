@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.freefair.lombok' version '6.0.0-m2'
+    id 'io.qameta.allure' version '2.11.2'
 
 }
 
@@ -21,11 +22,19 @@ dependencies {
                         'org.assertj:assertj-core:3.27.7',
                         'org.aeonbits.owner:owner:1.0.12',
                         'org.projectlombok:lombok:1.18.42',
-                        'com.github.javafaker:javafaker:1.0.2'
+                        'com.github.javafaker:javafaker:1.0.2',
+                        'io.qameta.allure:allure-junit5:2.24.0',
+                        'io.qameta.allure:allure-rest-assured:2.24.0'
     )
 
 }
 
 test {
     useJUnitPlatform()
+}
+allure {
+    version = '2.24.0'
+    useJUnit5 {
+        version = '2.24.0'
+    }
 }
