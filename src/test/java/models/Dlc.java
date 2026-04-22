@@ -7,9 +7,10 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Dlc {
+
     private String description;
     private String dlcName;
-    private Boolean isDlcFree;
+    public Boolean isDlcFree;
     private Double price;
     private Integer rating;
     private AdditionalData similarDlc;

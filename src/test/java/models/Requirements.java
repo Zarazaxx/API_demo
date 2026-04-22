@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Requirement {
+public class Requirements {
     private Integer hardDrive;
     private String osName;
     private Integer ramGb;

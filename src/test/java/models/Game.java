@@ -10,16 +10,16 @@ import java.util.List;
 @AllArgsConstructor
 public class Game {
     private String company;
-    private String discription;
-    private List<Dlc> dils;
+    private String description;
+    private List<Dlc> dlcs;
     private Integer gameId;
     private String genre;
     private Boolean isFree;
     private Double price;
-    private String publishDate;
+    private String publish_date;
     private Integer rating;
     private Boolean requiredAge;
-    private Requirement requirements;
+    private Requirements requirements;
     private List<String> tags;
     private String title;
 

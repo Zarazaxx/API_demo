@@ -9,5 +9,5 @@ import lombok.*;
 
 public class RegistrationResponse {
     private InfoResponse info;
-    private User register_data;
+    private UserResponse register_data;
 }
