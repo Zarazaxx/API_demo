@@ -2,6 +2,7 @@ package tests;
 
 import data.RandomData;
 import data.UserBuilder;
+import help.fixtures.TestFixtures;
 import io.restassured.response.Response;
 import models.*;
 import org.junit.jupiter.api.DisplayName;
@@ -25,7 +26,6 @@ public class UsersApiTests {
     @DisplayName("Get profile")
     @Test
     void getMyUser(){
-
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
         auth.registrationNewUser(newUser);
@@ -42,11 +42,7 @@ public class UsersApiTests {
     @DisplayName("Change password")
     @Test
     void changePassword(){
-        AuthController auth=new AuthController();
-        UserRequest newUser= new UserBuilder().withGames(1).build();
-        auth.registrationNewUser(newUser);
-        LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), newUser.getPass());
-        Token token= auth.createAuthToken(loginRequest).as(Token.class);
+        Token token= TestFixtures.createAndLoginUser();
         UsersController userApi=new UsersController(token.getToken());
         LoginRequest onlyPassword= new LoginRequest(null, RandomData.Password());
         Response responseChangePassword=userApi.putPasswordUser(onlyPassword);
@@ -58,11 +54,7 @@ public class UsersApiTests {
     @DisplayName("Delete user")
     @Test
     void deleteMyUser(){
-        AuthController auth=new AuthController();
-        UserRequest newUser= new UserBuilder().withGames(1).build();
-        auth.registrationNewUser(newUser);
-        LoginRequest loginResponse=new LoginRequest(newUser.getLogin(), newUser.getPass());
-        Token token= auth.createAuthToken(loginResponse).as(Token.class);
+        Token token= TestFixtures.createAndLoginUser();
         UsersController userApi=new UsersController(token.getToken());
         Response responseDeleteUser=userApi.deleteUser();
         assertThat(responseDeleteUser.statusCode()).isEqualTo(200);
