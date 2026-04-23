@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "info": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "message",
+        "status"
+      ]
+    },
+    "register_data": {
+      "type": "object",
+      "properties": {
+        "games": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "company": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "dlcs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string"
+                    },
+                    "dlcName": {
+                      "type": "string"
+                    },
+                    "isDlcFree": {
+                      "type": "boolean"
+                    },
+                    "price": {
+                      "type": "number"
+                    },
+                    "rating": {
+                      "type": "number"
+                    },
+                    "similarDlc": {
+                      "type": "object",
+                      "properties": {
+                        "dlcNameFromAnotherGame": {
+                          "type": "string"
+                        },
+                        "isFree": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "dlcNameFromAnotherGame",
+                        "isFree"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "description",
+                    "dlcName",
+                    "isDlcFree",
+                    "price",
+                    "rating",
+                    "similarDlc"
+                  ]
+                }
+              },
+              "gameId": {
+                "type": "number"
+              },
+              "genre": {
+                "type": "string"
+              },
+              "isFree": {
+                "type": "boolean"
+              },
+              "price": {
+                "type": "number"
+              },
+              "publish_date": {
+                "type": "string"
+              },
+              "rating": {
+                "type": "number"
+              },
+              "requiredAge": {
+                "type": "boolean"
+              },
+              "requirements": {
+                "type": "object",
+                "properties": {
+                  "hardDrive": {
+                    "type": "number"
+                  },
+                  "osName": {
+                    "type": "string"
+                  },
+                  "ramGb": {
+                    "type": "number"
+                  },
+                  "videoCard": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "hardDrive",
+                  "osName",
+                  "ramGb",
+                  "videoCard"
+                ]
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "company",
+              "description",
+              "dlcs",
+              "gameId",
+              "genre",
+              "isFree",
+              "price",
+              "publish_date",
+              "rating",
+              "requiredAge",
+              "requirements",
+              "tags",
+              "title"
+            ]
+          }
+        },
+        "id": {
+          "type": "number"
+        },
+        "login": {
+          "type": "string"
+        },
+        "pass": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "games",
+        "id",
+        "login",
+        "pass"
+      ]
+    }
+  },
+  "required": [
+    "info",
+    "register_data"
+  ]
+}

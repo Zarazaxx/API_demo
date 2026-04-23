@@ -8,10 +8,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.AuthController;
 import utils.UsersController;
+
+
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class UsersApiTests {
-
     @DisplayName("Get last 100 users")
     @Test
     void listLastUsers (){
@@ -23,6 +25,7 @@ public class UsersApiTests {
     @DisplayName("Get profile")
     @Test
     void getMyUser(){
+
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
         auth.registrationNewUser(newUser);
@@ -31,6 +34,7 @@ public class UsersApiTests {
         UsersController userApi=new UsersController(token.getToken());
         Response responseMyUser=userApi.getUser();
         assertThat(responseMyUser.statusCode()).isEqualTo(200);
+        responseMyUser.then().body(matchesJsonSchemaInClasspath("schemas/UserResponse.json"));
         UserResponse myUser= responseMyUser.as(UserResponse.class);
         assertThat(myUser.getLogin()).isEqualTo(newUser.getLogin());
         assertThat(myUser.getPass()).isEqualTo(newUser.getPass());
@@ -47,6 +51,7 @@ public class UsersApiTests {
         LoginRequest onlyPassword= new LoginRequest(null, RandomData.Password());
         Response responseChangePassword=userApi.putPasswordUser(onlyPassword);
         assertThat(responseChangePassword.statusCode()).isEqualTo(200);
+        responseChangePassword.then().body(matchesJsonSchemaInClasspath("schemas/InfoResponse.json"));
         InfoWrapper user=responseChangePassword.as(InfoWrapper.class);
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }
@@ -61,6 +66,7 @@ public class UsersApiTests {
         UsersController userApi=new UsersController(token.getToken());
         Response responseDeleteUser=userApi.deleteUser();
         assertThat(responseDeleteUser.statusCode()).isEqualTo(200);
+        responseDeleteUser.then().body(matchesJsonSchemaInClasspath("schemas/InfoResponse.json"));
         InfoWrapper user=responseDeleteUser.as(InfoWrapper.class);
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.AuthController;
 
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AuthApiTests {
@@ -17,6 +18,7 @@ public class AuthApiTests {
         UserRequest newUser= new UserBuilder().withGames(1).build();
         Response response = auth.registrationNewUser(newUser);
         assertThat(response.statusCode()).isEqualTo(201);
+        response.then().body(matchesJsonSchemaInClasspath("schemas/RegistrationResponse.json"));
         RegistrationResponse newRegistrationUser=response.as(RegistrationResponse.class);
         assertThat(newRegistrationUser.getInfo().getStatus()).isEqualTo("success");
         assertThat(newRegistrationUser.getRegister_data().getId()).isNotNull();
@@ -33,6 +35,7 @@ public class AuthApiTests {
         LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), newUser.getPass());
         Response responseLogin= auth.createAuthToken(loginRequest);
         assertThat(responseLogin.statusCode()).isEqualTo(200);
+        responseLogin.then().body(matchesJsonSchemaInClasspath("schemas/LoginResponse.json"));
         assertThat(responseLogin.getBody().asString()).isNotEmpty();
     }
 }
