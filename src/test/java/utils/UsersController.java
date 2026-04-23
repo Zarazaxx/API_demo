@@ -15,6 +15,7 @@ public class UsersController extends BaseApi {
                 .when()
                 .get("/users")
                 .then()
+                .log().all()
                 .extract().response();
 
     }
@@ -23,6 +24,7 @@ public class UsersController extends BaseApi {
                 .when()
                 .get("/user")
                 .then()
+                .log().all()
                 .extract().response();
     }
     public Response putPasswordUser(LoginRequest body){
@@ -39,6 +41,7 @@ public class UsersController extends BaseApi {
                 .when()
                 .delete("/user")
                 .then()
+                .log().all()
                 .extract().response();
     }
 

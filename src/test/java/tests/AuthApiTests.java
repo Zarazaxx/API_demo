@@ -10,7 +10,7 @@ import utils.AuthController;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AuthApiTests {
-    @DisplayName("Создание нового пользователя")
+    @DisplayName("Create new user")
     @Test
     void createNewUser(){
         AuthController auth=new AuthController();
@@ -24,7 +24,7 @@ public class AuthApiTests {
         assertThat(newRegistrationUser.getRegister_data().getPass()).isEqualTo(newUser.getPass());
         assertThat(newRegistrationUser.getRegister_data().getGames().size()).isEqualTo(1);
     }
-    @DisplayName("Авторизация пользователя")
+    @DisplayName("Login user")
     @Test
     void login(){
         AuthController auth=new AuthController();

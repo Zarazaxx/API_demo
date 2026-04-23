@@ -32,12 +32,10 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
 allure {
     version = '2.24.0'
     useJUnit5 {
         version = '2.24.0'
     }
-}
-tasks.withType(Test) {
-    systemProperty "file.encoding", "UTF-8"
 }

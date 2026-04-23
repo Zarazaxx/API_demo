@@ -15,6 +15,7 @@ public class AuthController extends BaseApi {
                 .when()
                 .post("/login")
                 .then()
+                .log().all()
                 .extract().response();
     }
     public Response registrationNewUser(UserRequest user) {
