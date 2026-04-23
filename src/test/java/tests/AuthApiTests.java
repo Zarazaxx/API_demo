@@ -3,13 +3,14 @@ package tests;
 import data.UserBuilder;
 import io.restassured.response.Response;
 import models.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.AuthController;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AuthApiTests {
-
+    @DisplayName("Создание нового пользователя")
     @Test
     void createNewUser(){
         AuthController auth=new AuthController();
@@ -23,6 +24,7 @@ public class AuthApiTests {
         assertThat(newRegistrationUser.getRegister_data().getPass()).isEqualTo(newUser.getPass());
         assertThat(newRegistrationUser.getRegister_data().getGames().size()).isEqualTo(1);
     }
+    @DisplayName("Авторизация пользователя")
     @Test
     void login(){
         AuthController auth=new AuthController();

@@ -4,6 +4,7 @@ import data.RandomData;
 import data.UserBuilder;
 import io.restassured.response.Response;
 import models.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.AuthController;
 import utils.UsersController;
@@ -11,6 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class UsersApiTests {
 
+    @DisplayName("Получение последних 100 зарегистрированных пользователей")
     @Test
     void listLastUsers (){
         UsersController userApi=new UsersController(null);
@@ -18,6 +20,7 @@ public class UsersApiTests {
         assertThat(users.statusCode()).isEqualTo(200);
         assertThat(users.getBody().asString()).isNotEmpty();
     }
+    @DisplayName("Получение профиля своего пользователя")
     @Test
     void getMyUser(){
         AuthController auth=new AuthController();
@@ -32,6 +35,7 @@ public class UsersApiTests {
         assertThat(myUser.getLogin()).isEqualTo(newUser.getLogin());
         assertThat(myUser.getPass()).isEqualTo(newUser.getPass());
     }
+    @DisplayName("Изменение пароля")
     @Test
     void changePassword(){
         AuthController auth=new AuthController();
@@ -46,6 +50,7 @@ public class UsersApiTests {
         InfoWrapper user=responseChangePassword.as(InfoWrapper.class);
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }
+    @DisplayName("Удаление пользователя")
     @Test
     void deleteMyUser(){
         AuthController auth=new AuthController();
