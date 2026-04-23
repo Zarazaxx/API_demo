@@ -10,7 +10,7 @@ import java.util.List;
 public class RandomData {
     private static final Faker faker = new Faker();
 
-    public static String UserName(){return "autotest."+faker.lorem().word();}
+    public static String UserName(){return "autotest."+faker.lorem().word()+faker.number().randomNumber();}
     public static String Password(){
         return faker.internet().password();
     }

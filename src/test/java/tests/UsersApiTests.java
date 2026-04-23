@@ -44,8 +44,8 @@ public class UsersApiTests {
         LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), newUser.getPass());
         Token token= auth.createAuthToken(loginRequest).as(Token.class);
         UsersController userApi=new UsersController(token.getToken());
-        LoginRequest onlyPassworg= new LoginRequest(null, RandomData.Password());
-        Response responseChangePassword=userApi.putPasswordUser(onlyPassworg);
+        LoginRequest onlyPassword= new LoginRequest(null, RandomData.Password());
+        Response responseChangePassword=userApi.putPasswordUser(onlyPassword);
         assertThat(responseChangePassword.statusCode()).isEqualTo(200);
         InfoWrapper user=responseChangePassword.as(InfoWrapper.class);
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
@@ -56,8 +56,8 @@ public class UsersApiTests {
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
         auth.registrationNewUser(newUser);
-        LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), newUser.getPass());
-        Token token= auth.createAuthToken(loginRequest).as(Token.class);
+        LoginRequest loginResponse=new LoginRequest(newUser.getLogin(), newUser.getPass());
+        Token token= auth.createAuthToken(loginResponse).as(Token.class);
         UsersController userApi=new UsersController(token.getToken());
         Response responseDeleteUser=userApi.deleteUser();
         assertThat(responseDeleteUser.statusCode()).isEqualTo(200);
