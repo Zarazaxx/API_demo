@@ -6,6 +6,7 @@ import help.fixtures.TestFixtures;
 import io.restassured.response.Response;
 import models.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import utils.AuthController;
 import utils.UsersController;
@@ -25,6 +26,8 @@ public class UsersApiTests {
     }
     @DisplayName("Get profile")
     @Test
+    @Tag("User")
+    @Tag("positive")
     void getMyUser(){
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
@@ -41,6 +44,8 @@ public class UsersApiTests {
     }
     @DisplayName("Change password")
     @Test
+    @Tag("User")
+    @Tag("positive")
     void changePassword(){
         Token token= TestFixtures.createAndLoginUser();
         UsersController userApi=new UsersController(token.getToken());
@@ -53,6 +58,8 @@ public class UsersApiTests {
     }
     @DisplayName("Delete user")
     @Test
+    @Tag("User")
+    @Tag("positive")
     void deleteMyUser(){
         Token token= TestFixtures.createAndLoginUser();
         UsersController userApi=new UsersController(token.getToken());
@@ -62,5 +69,76 @@ public class UsersApiTests {
         InfoWrapper user=responseDeleteUser.as(InfoWrapper.class);
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }
+    @DisplayName("Get profile without token")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void getUser_withoutToken_shouldFail() {
+        UsersController userApi = new UsersController(null);
+        Response response = userApi.getUser();
+        assertThat(response.statusCode()).isEqualTo(401);
+    }
+    @DisplayName("Get profile with invalid token")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void getUser_invalidToken_shouldFail() {
+        UsersController userApi = new UsersController("invalid_token");
+        Response response = userApi.getUser();
+        assertThat(response.statusCode()).isEqualTo(401);
+    }
+    @DisplayName("Get deleted profile")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void getUser_deletedUser_shouldFail() {
+        Token token = TestFixtures.createAndLoginUser();
+        UsersController userApi = new UsersController(token.getToken());
+        userApi.deleteUser(); // удалили
+        Response response = userApi.getUser();
+        assertThat(response.statusCode()).isEqualTo(401);
+    }
 
+    @DisplayName("Get profile")@Test
+    @Tag("negative")
+    @Tag("User")
+    void changePassword_withoutToken_shouldFail() {
+        UsersController userApi = new UsersController(null);
+        LoginRequest request = new LoginRequest(null, RandomData.Password());
+        Response response = userApi.putPasswordUser(request);
+        assertThat(response.statusCode()).isEqualTo(401);
+
+    }
+    @DisplayName("Change password with empty password")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void changePassword_emptyPassword_shouldFail() {
+        Token token = TestFixtures.createAndLoginUser();
+        UsersController userApi = new UsersController(token.getToken());
+        LoginRequest request = new LoginRequest(null, "");
+        Response response = userApi.putPasswordUser(request);
+        assertThat(response.statusCode()).isEqualTo(400);
+        assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
+    }
+    @DisplayName("Delete user without token")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void deleteUser_withoutToken_shouldFail() {
+        UsersController userApi = new UsersController(null);
+        Response response = userApi.deleteUser();
+        assertThat(response.statusCode()).isEqualTo(401);
+    }
+    @DisplayName("Delete user twice")
+    @Test
+    @Tag("negative")
+    @Tag("User")
+    void deleteUser_twice_shouldFail() {
+        Token token = TestFixtures.createAndLoginUser();
+        UsersController userApi = new UsersController(token.getToken());
+        userApi.deleteUser();
+        Response response = userApi.deleteUser();
+        assertThat(response.statusCode()).isEqualTo(401);
+    }
 }

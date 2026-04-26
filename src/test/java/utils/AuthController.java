@@ -21,7 +21,6 @@ public class AuthController extends BaseApi {
     public Response registrationNewUser(UserRequest user) {
         return request()
                 .body(user)
-                .header("accept", "*/*")
                 .when()
                 .post("/signup")
                 .then()

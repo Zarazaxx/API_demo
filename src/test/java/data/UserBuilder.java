@@ -14,6 +14,14 @@ public class UserBuilder {
         this.games = generateGames(count);
         return this;
     }
+    public UserBuilder withUsername(String login){
+        this.userName=login;
+        return this;
+    }
+    public UserBuilder withPassword(String password){
+        this.userPassword=password;
+        return this;
+    }
     private List<Game> generateGames(int count){
         List<Game> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
