@@ -40,7 +40,7 @@ jobs:
           path: allure-results
 
       - name: Generate report
-        uses: simple-elf/allure-report-action@v1
+        uses: simple-elf/allure-report-action@master
         with:
           allure_results: allure-results
           allure_report: allure-report
