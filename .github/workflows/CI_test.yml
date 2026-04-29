@@ -9,27 +9,44 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    container:
+      image: gradle:8.5-jdk17
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Make gradlew executable
-        run: chmod +x gradlew
-
       - name: Run tests
-        run: ./gradlew clean test
+        run: gradle clean test
 
       - name: Generate Allure report
-        run: ./gradlew allureReport
+        run: gradle allureReport
 
       - name: Upload Allure results
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: build/allure-results
+
+  publish-report:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+      - name: Generate report
+        uses: simple-elf/allure-report-action@v1
+        with:
+          allure_results: allure-results
+          allure_report: allure-report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-report
