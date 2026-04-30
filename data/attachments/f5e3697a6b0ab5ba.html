@@ -1,0 +1,190 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Adams Inc&quot;,
+            &quot;description&quot;: &quot;Tenetur voluptates non occaecati expedita consequuntur impedit. Ullam suscipit ut aut sed voluptatem dolor. Sint et aut voluptates ab accusantium.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Placeat id repellendus. Inventore reprehenderit vitae assumenda. Aspernatur est commodi ipsam enim quibusdam voluptas. Autem ex beatae doloremque sed soluta commodi itaque.&quot;,
+                    &quot;dlcName&quot;: &quot;Bytecard&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 20.69,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Lotlux&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tenetur pariatur ut nesciunt perferendis iusto. Eveniet tenetur nam ratione. Minima porro adipisci.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Temp&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et facilis repellendus tempore modi et voluptas. Voluptas rerum nihil dolorem et. Ex eos doloremque neque repellat non.&quot;,
+                    &quot;dlcName&quot;: &quot;Voyatouch&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stronghold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Ipsam a tempora ut optio quam perspiciatis temporibus. Est nulla expedita atque. Assumenda et quibusdam eius ut aut maxime odio.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklux&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stringtough&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Autem voluptatum doloremque dolores odio et. Eos quas error ipsa molestias. Velit ipsum nihil libero.&quot;,
+                    &quot;dlcName&quot;: &quot;Viva&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bytecard&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Fighting&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2020-11-19T19:01:34.419Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 18,
+                &quot;osName&quot;: &quot;Windows 11&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 3080 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;quantify&quot;,
+                &quot;program&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Shield&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.dolores57351054&quot;,
+    &quot;pass&quot;: &quot;3jbwd0ws5c&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Adams Inc&quot;,
+            &quot;description&quot;: &quot;Tenetur voluptates non occaecati expedita consequuntur impedit. Ullam suscipit ut aut sed voluptatem dolor. Sint et aut voluptates ab accusantium.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Placeat id repellendus. Inventore reprehenderit vitae assumenda. Aspernatur est commodi ipsam enim quibusdam voluptas. Autem ex beatae doloremque sed soluta commodi itaque.&quot;,
+                    &quot;dlcName&quot;: &quot;Bytecard&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 20.69,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Lotlux&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tenetur pariatur ut nesciunt perferendis iusto. Eveniet tenetur nam ratione. Minima porro adipisci.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Temp&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et facilis repellendus tempore modi et voluptas. Voluptas rerum nihil dolorem et. Ex eos doloremque neque repellat non.&quot;,
+                    &quot;dlcName&quot;: &quot;Voyatouch&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stronghold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Ipsam a tempora ut optio quam perspiciatis temporibus. Est nulla expedita atque. Assumenda et quibusdam eius ut aut maxime odio.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklux&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stringtough&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Autem voluptatum doloremque dolores odio et. Eos quas error ipsa molestias. Velit ipsum nihil libero.&quot;,
+                    &quot;dlcName&quot;: &quot;Viva&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bytecard&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Fighting&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2020-11-19T19:01:34.419Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 18,
+                &quot;osName&quot;: &quot;Windows 11&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 3080 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;quantify&quot;,
+                &quot;program&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Shield&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.dolores57351054&quot;,
+    &quot;pass&quot;: &quot;3jbwd0ws5c&quot;
+}&#39;
+</div>

@@ -1,0 +1,146 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Kling, Gibson and Fay&quot;,
+            &quot;description&quot;: &quot;Et sed est. Aperiam commodi aut quisquam saepe non. Amet ut occaecati fuga velit nisi. Quia sed quaerat officia consectetur odio officiis.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Nam illo quo non et. Eligendi corrupti amet quia et laboriosam recusandae voluptate.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 61.71,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitchip&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Eveniet voluptatem vel ab nostrum autem. Voluptatem sunt ab dolores non sunt ut.&quot;,
+                    &quot;dlcName&quot;: &quot;Voltsillam&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-find&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Aperiam et ut excepturi et. Saepe porro unde amet.&quot;,
+                    &quot;dlcName&quot;: &quot;Latlux&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 35.73,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Vagram&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Battle royale&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-12-11T06:07:27.311Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 40,
+                &quot;osName&quot;: &quot;Windows 10&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 3060&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;index&quot;,
+                &quot;transmit&quot;,
+                &quot;quantify&quot;
+            ],
+            &quot;title&quot;: &quot;Ricochet&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.ratione677073&quot;,
+    &quot;pass&quot;: &quot;jv79r6tz7wr&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Kling, Gibson and Fay&quot;,
+            &quot;description&quot;: &quot;Et sed est. Aperiam commodi aut quisquam saepe non. Amet ut occaecati fuga velit nisi. Quia sed quaerat officia consectetur odio officiis.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Nam illo quo non et. Eligendi corrupti amet quia et laboriosam recusandae voluptate.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 61.71,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitchip&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Eveniet voluptatem vel ab nostrum autem. Voluptatem sunt ab dolores non sunt ut.&quot;,
+                    &quot;dlcName&quot;: &quot;Voltsillam&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-find&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Aperiam et ut excepturi et. Saepe porro unde amet.&quot;,
+                    &quot;dlcName&quot;: &quot;Latlux&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 35.73,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Vagram&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Battle royale&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-12-11T06:07:27.311Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 40,
+                &quot;osName&quot;: &quot;Windows 10&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 3060&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;index&quot;,
+                &quot;transmit&quot;,
+                &quot;quantify&quot;
+            ],
+            &quot;title&quot;: &quot;Ricochet&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.ratione677073&quot;,
+    &quot;pass&quot;: &quot;jv79r6tz7wr&quot;
+}&#39;
+</div>

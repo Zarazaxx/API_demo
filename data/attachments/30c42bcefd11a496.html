@@ -1,0 +1,190 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Vandervort, Pacocha and Cremin&quot;,
+            &quot;description&quot;: &quot;Officia laboriosam ducimus non autem quam ducimus. Ipsum qui qui dolorum.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Velit consequatur est laborum nam rem eum saepe. Beatae voluptas qui mollitia sed vero corporis quis. Quos assumenda et ipsum. Est perspiciatis vitae in.&quot;,
+                    &quot;dlcName&quot;: &quot;Rank&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitwolf&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Doloribus quibusdam quibusdam repellat rerum nihil. Illo debitis quis rerum. Expedita eligendi eos aut sed consectetur architecto cupiditate. Pariatur officiis ea sunt doloremque.&quot;,
+                    &quot;dlcName&quot;: &quot;Wrapsafe&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 60.18,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et ut ipsum debitis. Ut sed debitis ipsam dolores deleniti minima.&quot;,
+                    &quot;dlcName&quot;: &quot;Zoolab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tampflex&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Debitis consequatur molestias et dolores laboriosam est odit. Id ipsum repudiandae praesentium. Magni ut quisquam. Voluptates aut et ea velit et.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Omnis ut fuga voluptatem eos et qui ut. Et ex illum. Dicta sit officiis. Non repellat voluptas esse.&quot;,
+                    &quot;dlcName&quot;: &quot;Redhold&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tres-Zap&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Tactical role-playing&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 86.28,
+            &quot;publish_date&quot;: &quot;2023-03-16T20:53:03.547Z&quot;,
+            &quot;rating&quot;: 3,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 12,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RX 7600&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;navigate&quot;,
+                &quot;navigate&quot;,
+                &quot;synthesize&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Black 2&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.animi71&quot;,
+    &quot;pass&quot;: &quot;fg0orsnmhfd&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Vandervort, Pacocha and Cremin&quot;,
+            &quot;description&quot;: &quot;Officia laboriosam ducimus non autem quam ducimus. Ipsum qui qui dolorum.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Velit consequatur est laborum nam rem eum saepe. Beatae voluptas qui mollitia sed vero corporis quis. Quos assumenda et ipsum. Est perspiciatis vitae in.&quot;,
+                    &quot;dlcName&quot;: &quot;Rank&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitwolf&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Doloribus quibusdam quibusdam repellat rerum nihil. Illo debitis quis rerum. Expedita eligendi eos aut sed consectetur architecto cupiditate. Pariatur officiis ea sunt doloremque.&quot;,
+                    &quot;dlcName&quot;: &quot;Wrapsafe&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 60.18,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et ut ipsum debitis. Ut sed debitis ipsam dolores deleniti minima.&quot;,
+                    &quot;dlcName&quot;: &quot;Zoolab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tampflex&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Debitis consequatur molestias et dolores laboriosam est odit. Id ipsum repudiandae praesentium. Magni ut quisquam. Voluptates aut et ea velit et.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Omnis ut fuga voluptatem eos et qui ut. Et ex illum. Dicta sit officiis. Non repellat voluptas esse.&quot;,
+                    &quot;dlcName&quot;: &quot;Redhold&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tres-Zap&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Tactical role-playing&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 86.28,
+            &quot;publish_date&quot;: &quot;2023-03-16T20:53:03.547Z&quot;,
+            &quot;rating&quot;: 3,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 12,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RX 7600&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;navigate&quot;,
+                &quot;navigate&quot;,
+                &quot;synthesize&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Black 2&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.animi71&quot;,
+    &quot;pass&quot;: &quot;fg0orsnmhfd&quot;
+}&#39;
+</div>

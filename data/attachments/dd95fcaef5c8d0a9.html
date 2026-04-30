@@ -1,0 +1,102 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Crona, Bashirian and Pfannerstill&quot;,
+            &quot;description&quot;: &quot;Placeat hic aut perferendis aliquam tenetur omnis. Beatae pariatur qui eligendi amet.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Id alias earum aut et incidunt unde. Necessitatibus corrupti doloremque laboriosam ipsa dignissimos ut. Autem vitae quia omnis eveniet. Eligendi consectetur est consequuntur dolores alias.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Duobam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Survival&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 70.47,
+            &quot;publish_date&quot;: &quot;2022-05-10T10:10:54.856Z&quot;,
+            &quot;rating&quot;: 8,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;iOS 17&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 3070&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;back up&quot;,
+                &quot;back up&quot;,
+                &quot;navigate&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Sapphire&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.iste77&quot;,
+    &quot;pass&quot;: &quot;0cqzgtkqtc&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Crona, Bashirian and Pfannerstill&quot;,
+            &quot;description&quot;: &quot;Placeat hic aut perferendis aliquam tenetur omnis. Beatae pariatur qui eligendi amet.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Id alias earum aut et incidunt unde. Necessitatibus corrupti doloremque laboriosam ipsa dignissimos ut. Autem vitae quia omnis eveniet. Eligendi consectetur est consequuntur dolores alias.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Duobam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Survival&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 70.47,
+            &quot;publish_date&quot;: &quot;2022-05-10T10:10:54.856Z&quot;,
+            &quot;rating&quot;: 8,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;iOS 17&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 3070&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;back up&quot;,
+                &quot;back up&quot;,
+                &quot;navigate&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon Sapphire&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.iste77&quot;,
+    &quot;pass&quot;: &quot;0cqzgtkqtc&quot;
+}&#39;
+</div>

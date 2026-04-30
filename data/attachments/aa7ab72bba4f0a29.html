@@ -1,0 +1,190 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Rogahn-Mraz&quot;,
+            &quot;description&quot;: &quot;Facere modi amet qui adipisci quod. Blanditiis est dolore aut voluptatem. Voluptas placeat et enim ut.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Voluptate cum veritatis suscipit ut necessitatibus pariatur. Corrupti ipsa doloribus exercitationem voluptatem ut ducimus. Eius et aut adipisci a et.&quot;,
+                    &quot;dlcName&quot;: &quot;Fintone&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 40.13,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Voltsillam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sed aut dolorem. Voluptates odio autem.&quot;,
+                    &quot;dlcName&quot;: &quot;Tres-Zap&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Namfix&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Quis qui expedita id. Blanditiis sint et.&quot;,
+                    &quot;dlcName&quot;: &quot;Treeflex&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 44.11,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Rank&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sint pariatur vel atque vel et debitis in. Distinctio nisi deleniti possimus ut nihil fugiat. Delectus ducimus laborum officiis cumque et qui.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 61.37,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tempsoft&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Blanditiis sunt maiores aspernatur dolor ut. Et optio minus facilis.&quot;,
+                    &quot;dlcName&quot;: &quot;Subin&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-Solowarm&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Rhythm&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-01-06T15:53:59.464Z&quot;,
+            &quot;rating&quot;: 2,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 5,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RX 6800 XT&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;calculate&quot;,
+                &quot;copy&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon LeafGreen&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.nulla102&quot;,
+    &quot;pass&quot;: &quot;5wrlk2xr90cwf&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Rogahn-Mraz&quot;,
+            &quot;description&quot;: &quot;Facere modi amet qui adipisci quod. Blanditiis est dolore aut voluptatem. Voluptas placeat et enim ut.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Voluptate cum veritatis suscipit ut necessitatibus pariatur. Corrupti ipsa doloribus exercitationem voluptatem ut ducimus. Eius et aut adipisci a et.&quot;,
+                    &quot;dlcName&quot;: &quot;Fintone&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 40.13,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Voltsillam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sed aut dolorem. Voluptates odio autem.&quot;,
+                    &quot;dlcName&quot;: &quot;Tres-Zap&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Namfix&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Quis qui expedita id. Blanditiis sint et.&quot;,
+                    &quot;dlcName&quot;: &quot;Treeflex&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 44.11,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Rank&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sint pariatur vel atque vel et debitis in. Distinctio nisi deleniti possimus ut nihil fugiat. Delectus ducimus laborum officiis cumque et qui.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 61.37,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tempsoft&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Blanditiis sunt maiores aspernatur dolor ut. Et optio minus facilis.&quot;,
+                    &quot;dlcName&quot;: &quot;Subin&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-Solowarm&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Rhythm&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-01-06T15:53:59.464Z&quot;,
+            &quot;rating&quot;: 2,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 5,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RX 6800 XT&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;calculate&quot;,
+                &quot;copy&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon LeafGreen&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.nulla102&quot;,
+    &quot;pass&quot;: &quot;5wrlk2xr90cwf&quot;
+}&#39;
+</div>
