@@ -1,0 +1,102 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Crona Group&quot;,
+            &quot;description&quot;: &quot;Pariatur libero ad officiis iure laborum qui. Similique cum et quos architecto. Explicabo rerum sed similique beatae aut sunt libero. Ab consectetur doloremque.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Et nam voluptatem. Tenetur dolor voluptatem quasi aut quasi repellat consequatur. Aut et similique animi laboriosam. Voluptatem et iure aut.&quot;,
+                    &quot;dlcName&quot;: &quot;Viva&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Aerified&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Visual novel&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2021-06-24T18:06:54.206Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 48,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RX 7900 XTX&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;transmit&quot;,
+                &quot;transmit&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Overwatch&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.earum7492926&quot;,
+    &quot;pass&quot;: &quot;1fds75nt1&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Crona Group&quot;,
+            &quot;description&quot;: &quot;Pariatur libero ad officiis iure laborum qui. Similique cum et quos architecto. Explicabo rerum sed similique beatae aut sunt libero. Ab consectetur doloremque.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Et nam voluptatem. Tenetur dolor voluptatem quasi aut quasi repellat consequatur. Aut et similique animi laboriosam. Voluptatem et iure aut.&quot;,
+                    &quot;dlcName&quot;: &quot;Viva&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Aerified&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Visual novel&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2021-06-24T18:06:54.206Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 48,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RX 7900 XTX&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;transmit&quot;,
+                &quot;transmit&quot;,
+                &quot;hack&quot;
+            ],
+            &quot;title&quot;: &quot;Overwatch&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.earum7492926&quot;,
+    &quot;pass&quot;: &quot;1fds75nt1&quot;
+}&#39;
+</div>

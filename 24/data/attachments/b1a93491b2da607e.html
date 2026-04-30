@@ -1,0 +1,212 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Purdy-Littel&quot;,
+            &quot;description&quot;: &quot;Autem est quis consectetur quia adipisci. Necessitatibus quas et repellendus velit harum qui maxime. Praesentium possimus quae fuga voluptas dolorem minima est. Et dicta quod dignissimos provident eos autem.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Libero sequi optio incidunt ut. Aliquam doloremque laboriosam pariatur fugiat. Assumenda adipisci ipsam quo deleniti dignissimos eius. Inventore aut mollitia aut sunt molestiae quis.&quot;,
+                    &quot;dlcName&quot;: &quot;Tempsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zamit&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Hic reprehenderit animi autem delectus qui. Et dolores nesciunt ducimus impedit. Consequatur aut temporibus molestiae sequi vero nemo enim.&quot;,
+                    &quot;dlcName&quot;: &quot;Aerified&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Veribet&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Est harum est et nostrum a. Cum dolor omnis id.&quot;,
+                    &quot;dlcName&quot;: &quot;Vagram&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zamit&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Aut ullam velit voluptas natus qui. Perferendis modi non eaque. Quaerat qui corporis facilis dolorem vero.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklab&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 29.24,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Duobam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Adipisci fugiat quia reprehenderit quidem. At laudantium cum minima voluptates soluta.&quot;,
+                    &quot;dlcName&quot;: &quot;Lotstring&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 86.68,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tempora autem corporis quisquam. Beatae illo autem quia aut placeat. Ipsam facilis dolorem enim iste quis facere.&quot;,
+                    &quot;dlcName&quot;: &quot;Opela&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tempsoft&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Survival horror&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 32.53,
+            &quot;publish_date&quot;: &quot;2021-05-01T19:37:51.296Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 22,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 3090 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;parse&quot;,
+                &quot;calculate&quot;,
+                &quot;override&quot;
+            ],
+            &quot;title&quot;: &quot;The Legend of Zelda: Twilight Princess&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.sed62038&quot;,
+    &quot;pass&quot;: &quot;dls7cipgz91nu&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Purdy-Littel&quot;,
+            &quot;description&quot;: &quot;Autem est quis consectetur quia adipisci. Necessitatibus quas et repellendus velit harum qui maxime. Praesentium possimus quae fuga voluptas dolorem minima est. Et dicta quod dignissimos provident eos autem.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Libero sequi optio incidunt ut. Aliquam doloremque laboriosam pariatur fugiat. Assumenda adipisci ipsam quo deleniti dignissimos eius. Inventore aut mollitia aut sunt molestiae quis.&quot;,
+                    &quot;dlcName&quot;: &quot;Tempsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zamit&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Hic reprehenderit animi autem delectus qui. Et dolores nesciunt ducimus impedit. Consequatur aut temporibus molestiae sequi vero nemo enim.&quot;,
+                    &quot;dlcName&quot;: &quot;Aerified&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Veribet&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Est harum est et nostrum a. Cum dolor omnis id.&quot;,
+                    &quot;dlcName&quot;: &quot;Vagram&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zamit&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Aut ullam velit voluptas natus qui. Perferendis modi non eaque. Quaerat qui corporis facilis dolorem vero.&quot;,
+                    &quot;dlcName&quot;: &quot;Konklab&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 29.24,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Duobam&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Adipisci fugiat quia reprehenderit quidem. At laudantium cum minima voluptates soluta.&quot;,
+                    &quot;dlcName&quot;: &quot;Lotstring&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 86.68,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tempora autem corporis quisquam. Beatae illo autem quia aut placeat. Ipsam facilis dolorem enim iste quis facere.&quot;,
+                    &quot;dlcName&quot;: &quot;Opela&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tempsoft&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Survival horror&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 32.53,
+            &quot;publish_date&quot;: &quot;2021-05-01T19:37:51.296Z&quot;,
+            &quot;rating&quot;: 9,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 22,
+                &quot;osName&quot;: &quot;macOS Ventura&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 3090 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;parse&quot;,
+                &quot;calculate&quot;,
+                &quot;override&quot;
+            ],
+            &quot;title&quot;: &quot;The Legend of Zelda: Twilight Princess&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.sed62038&quot;,
+    &quot;pass&quot;: &quot;dls7cipgz91nu&quot;
+}&#39;
+</div>

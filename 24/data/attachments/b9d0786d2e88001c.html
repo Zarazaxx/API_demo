@@ -1,0 +1,212 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Vandervort, Klein and Johnston&quot;,
+            &quot;description&quot;: &quot;Soluta eveniet a minima itaque et. Et nulla mollitia nihil fugit non.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Maxime sit voluptatem dolorum culpa ut ullam pariatur. Ut distinctio illum quis recusandae.&quot;,
+                    &quot;dlcName&quot;: &quot;Alphazap&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 86.77,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Rank&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Molestias voluptates quia. Quidem deserunt esse ut tempora ducimus omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Alphazap&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Consequatur ducimus dolores quae consequatur odit debitis. Assumenda et modi nihil commodi et possimus perspiciatis. Et quibusdam qui perferendis quidem sed. Ut praesentium consequatur.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Hatity&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Quia voluptas rem excepturi architecto. Sed exercitationem numquam expedita quasi cum et.&quot;,
+                    &quot;dlcName&quot;: &quot;Toughjoyfax&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 28.52,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stringtough&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Exercitationem vitae fugit odit necessitatibus autem exercitationem. Repellendus velit at velit qui repellendus minus. Assumenda veniam quisquam velit quis ut eos voluptatem. Soluta vitae qui et quia aliquid similique.&quot;,
+                    &quot;dlcName&quot;: &quot;Flowdesk&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 15.01,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Eligendi vero rerum. Non veritatis qui quidem impedit aut. Est culpa fugit qui iure sequi dignissimos nulla. Ipsam pariatur et quia.&quot;,
+                    &quot;dlcName&quot;: &quot;Zontrax&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 39.46,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Trippledex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Rhythm&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-11-09T15:23:08.867Z&quot;,
+            &quot;rating&quot;: 6,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 47,
+                &quot;osName&quot;: &quot;Ubuntu 22.04&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RTX 4090&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;parse&quot;,
+                &quot;connect&quot;,
+                &quot;reboot&quot;
+            ],
+            &quot;title&quot;: &quot;Halo: Reach&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.est8127&quot;,
+    &quot;pass&quot;: &quot;ukn9avqq&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Vandervort, Klein and Johnston&quot;,
+            &quot;description&quot;: &quot;Soluta eveniet a minima itaque et. Et nulla mollitia nihil fugit non.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Maxime sit voluptatem dolorum culpa ut ullam pariatur. Ut distinctio illum quis recusandae.&quot;,
+                    &quot;dlcName&quot;: &quot;Alphazap&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 86.77,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Rank&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Molestias voluptates quia. Quidem deserunt esse ut tempora ducimus omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Alphazap&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Consequatur ducimus dolores quae consequatur odit debitis. Assumenda et modi nihil commodi et possimus perspiciatis. Et quibusdam qui perferendis quidem sed. Ut praesentium consequatur.&quot;,
+                    &quot;dlcName&quot;: &quot;Matsoft&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Hatity&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Quia voluptas rem excepturi architecto. Sed exercitationem numquam expedita quasi cum et.&quot;,
+                    &quot;dlcName&quot;: &quot;Toughjoyfax&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 28.52,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Stringtough&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Exercitationem vitae fugit odit necessitatibus autem exercitationem. Repellendus velit at velit qui repellendus minus. Assumenda veniam quisquam velit quis ut eos voluptatem. Soluta vitae qui et quia aliquid similique.&quot;,
+                    &quot;dlcName&quot;: &quot;Flowdesk&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 15.01,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Biodex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Eligendi vero rerum. Non veritatis qui quidem impedit aut. Est culpa fugit qui iure sequi dignissimos nulla. Ipsam pariatur et quia.&quot;,
+                    &quot;dlcName&quot;: &quot;Zontrax&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 39.46,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Trippledex&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Rhythm&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-11-09T15:23:08.867Z&quot;,
+            &quot;rating&quot;: 6,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 47,
+                &quot;osName&quot;: &quot;Ubuntu 22.04&quot;,
+                &quot;ramGb&quot;: 16,
+                &quot;videoCard&quot;: &quot;RTX 4090&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;parse&quot;,
+                &quot;connect&quot;,
+                &quot;reboot&quot;
+            ],
+            &quot;title&quot;: &quot;Halo: Reach&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.est8127&quot;,
+    &quot;pass&quot;: &quot;ukn9avqq&quot;
+}&#39;
+</div>
