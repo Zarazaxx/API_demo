@@ -21,6 +21,7 @@ public class UsersApiTests {
     void listLastUsers (){
         UsersController userApi=new UsersController(null);
         Response users=userApi.getUsers();
+
         assertThat(users.statusCode()).isEqualTo(200);
         assertThat(users.getBody().asString()).isNotEmpty();
     }
@@ -29,6 +30,7 @@ public class UsersApiTests {
     @Tag("User")
     @Tag("positive")
     void getMyUser(){
+
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
         auth.registrationNewUser(newUser);
@@ -36,9 +38,12 @@ public class UsersApiTests {
         Token token= auth.createAuthToken(loginRequest).as(Token.class);
         UsersController userApi=new UsersController(token.getToken());
         Response responseMyUser=userApi.getUser();
+
         assertThat(responseMyUser.statusCode()).isEqualTo(200);
         responseMyUser.then().body(matchesJsonSchemaInClasspath("schemas/UserResponse.json"));
+
         UserResponse myUser= responseMyUser.as(UserResponse.class);
+
         assertThat(myUser.getLogin()).isEqualTo(newUser.getLogin());
         assertThat(myUser.getPass()).isEqualTo(newUser.getPass());
     }
@@ -51,9 +56,12 @@ public class UsersApiTests {
         UsersController userApi=new UsersController(token.getToken());
         LoginRequest onlyPassword= new LoginRequest(null, RandomData.Password());
         Response responseChangePassword=userApi.putPasswordUser(onlyPassword);
+
         assertThat(responseChangePassword.statusCode()).isEqualTo(200);
         responseChangePassword.then().body(matchesJsonSchemaInClasspath("schemas/InfoResponse.json"));
+
         InfoWrapper user=responseChangePassword.as(InfoWrapper.class);
+
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }
     @DisplayName("Delete user")
@@ -64,9 +72,12 @@ public class UsersApiTests {
         Token token= TestFixtures.createAndLoginUser();
         UsersController userApi=new UsersController(token.getToken());
         Response responseDeleteUser=userApi.deleteUser();
+
         assertThat(responseDeleteUser.statusCode()).isEqualTo(200);
         responseDeleteUser.then().body(matchesJsonSchemaInClasspath("schemas/InfoResponse.json"));
+
         InfoWrapper user=responseDeleteUser.as(InfoWrapper.class);
+
         assertThat(user.getInfo().getStatus()).isEqualTo("success");
     }
     @DisplayName("Get profile without token")
@@ -76,6 +87,7 @@ public class UsersApiTests {
     void getUser_withoutToken_shouldFail() {
         UsersController userApi = new UsersController(null);
         Response response = userApi.getUser();
+
         assertThat(response.statusCode()).isEqualTo(401);
     }
     @DisplayName("Get profile with invalid token")
@@ -85,6 +97,7 @@ public class UsersApiTests {
     void getUser_invalidToken_shouldFail() {
         UsersController userApi = new UsersController("invalid_token");
         Response response = userApi.getUser();
+
         assertThat(response.statusCode()).isEqualTo(401);
     }
     @DisplayName("Get deleted profile")
@@ -94,8 +107,9 @@ public class UsersApiTests {
     void getUser_deletedUser_shouldFail() {
         Token token = TestFixtures.createAndLoginUser();
         UsersController userApi = new UsersController(token.getToken());
-        userApi.deleteUser(); // удалили
+        userApi.deleteUser(); // удаление пользователя
         Response response = userApi.getUser();
+
         assertThat(response.statusCode()).isEqualTo(401);
     }
 
@@ -106,6 +120,7 @@ public class UsersApiTests {
         UsersController userApi = new UsersController(null);
         LoginRequest request = new LoginRequest(null, RandomData.Password());
         Response response = userApi.putPasswordUser(request);
+
         assertThat(response.statusCode()).isEqualTo(401);
 
     }
@@ -118,6 +133,7 @@ public class UsersApiTests {
         UsersController userApi = new UsersController(token.getToken());
         LoginRequest request = new LoginRequest(null, "");
         Response response = userApi.putPasswordUser(request);
+
         assertThat(response.statusCode()).isEqualTo(400);
         assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
     }
@@ -128,6 +144,7 @@ public class UsersApiTests {
     void deleteUser_withoutToken_shouldFail() {
         UsersController userApi = new UsersController(null);
         Response response = userApi.deleteUser();
+
         assertThat(response.statusCode()).isEqualTo(401);
     }
     @DisplayName("Delete user twice")
@@ -139,6 +156,7 @@ public class UsersApiTests {
         UsersController userApi = new UsersController(token.getToken());
         userApi.deleteUser();
         Response response = userApi.deleteUser();
+
         assertThat(response.statusCode()).isEqualTo(401);
     }
 }

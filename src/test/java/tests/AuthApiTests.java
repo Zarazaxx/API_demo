@@ -21,9 +21,12 @@ public class AuthApiTests {
         AuthController auth=new AuthController();
         UserRequest newUser= new UserBuilder().withGames(1).build();
         Response response = auth.registrationNewUser(newUser);
+
         assertThat(response.statusCode()).isEqualTo(201);
         response.then().body(matchesJsonSchemaInClasspath("schemas/RegistrationResponse.json"));
+
         RegistrationResponse newRegistrationUser=response.as(RegistrationResponse.class);
+
         assertThat(newRegistrationUser.getInfo().getStatus()).isEqualTo("success");
         assertThat(newRegistrationUser.getRegister_data().getId()).isNotNull();
         assertThat(newRegistrationUser.getRegister_data().getLogin()).isEqualTo(newUser.getLogin());
@@ -40,6 +43,7 @@ public class AuthApiTests {
         auth.registrationNewUser(newUser);
         LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), newUser.getPass());
         Response responseLogin= auth.createAuthToken(loginRequest);
+
         assertThat(responseLogin.statusCode()).isEqualTo(200);
         responseLogin.then().body(matchesJsonSchemaInClasspath("schemas/LoginResponse.json"));
         assertThat(responseLogin.getBody().asString()).isNotEmpty();
@@ -54,8 +58,8 @@ public class AuthApiTests {
         UserRequest user = new UserBuilder()
                 .withUsername("")
                 .build();
-
         Response response = auth.registrationNewUser(user);
+
         assertThat(response.statusCode()).isEqualTo(400);
         assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
     }
@@ -69,6 +73,7 @@ public class AuthApiTests {
                 .withUsername(null)
                 .build();
         Response response = auth.registrationNewUser(user);
+
         assertThat(response.statusCode()).isEqualTo(400);
         assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
     }
@@ -82,6 +87,7 @@ public class AuthApiTests {
                 .withPassword(null)
                 .build();
         Response response = auth.registrationNewUser(user);
+
         assertThat(response.statusCode()).isEqualTo(400);
         assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
     }
@@ -94,6 +100,7 @@ public class AuthApiTests {
         UserRequest user = new UserBuilder().build();
         auth.registrationNewUser(user); // первая регистрация
         Response response = auth.registrationNewUser(user); // повторная регистрация пользователя
+
         assertThat(response.statusCode()).isEqualTo(400);
         assertThat(response.jsonPath().getString("info.status")).isEqualTo("fail");
         assertThat(response.jsonPath().getString("info.message")).isEqualTo("Login already exist");
@@ -108,6 +115,7 @@ public class AuthApiTests {
         auth.registrationNewUser(newUser);
         LoginRequest loginRequest=new LoginRequest(null, newUser.getPass());
         Response responseLogin= auth.createAuthToken(loginRequest);
+
         assertThat(responseLogin.statusCode()).isEqualTo(500);
     }
     @DisplayName("Login user with empty password")
@@ -120,6 +128,7 @@ public class AuthApiTests {
         auth.registrationNewUser(newUser);
         LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), null);
         Response responseLogin= auth.createAuthToken(loginRequest);
+
         assertThat(responseLogin.statusCode()).isEqualTo(500);
     }
     @DisplayName("Login user with error password")
@@ -132,6 +141,7 @@ public class AuthApiTests {
         auth.registrationNewUser(newUser);
         LoginRequest loginRequest=new LoginRequest(newUser.getLogin(), RandomData.Password());
         Response responseLogin= auth.createAuthToken(loginRequest);
+
         assertThat(responseLogin.statusCode()).isEqualTo(401);
     }
 }
