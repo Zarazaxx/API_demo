@@ -20,7 +20,7 @@ Resources for testing http://85.192.34.140:8080/swagger-ui/index.html
 |Test Framework:|JUnit|
 |API Testing:|RestAssured|
 |Reporting:|Allure|
-|CI/CD:|Jenkins / GitHub Actions|
+|CI/CD:|GitHub Actions|
 |Other:|Faker, Lombok|
 ## Architecture
 Separation of concerns:
@@ -112,7 +112,7 @@ Currently, I am expanding my expertise in:
 
 I focus on writing tests that not only validate functionality, but also improve product quality and development speed.
 ## Contacts
-LinkedIn: [Julia Miroshkina](http://linkedin.com/in/julia-miroshkina/)
+LinkedIn: [Julia Miroshkina](http://linkedin.com/in/julia-miroshkina/)  
 Email: [Gmail](miroshkina.j.e@gmail.com)
 
 
