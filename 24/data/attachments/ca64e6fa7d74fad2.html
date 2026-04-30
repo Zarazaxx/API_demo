@@ -1,0 +1,168 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Goldner, Sipes and Murazik&quot;,
+            &quot;description&quot;: &quot;Amet atque sequi exercitationem nihil. Soluta commodi ut sed. Aut exercitationem quo nulla sint voluptatem.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Nostrum aliquid consequatur veniam architecto veniam ut. Natus sit saepe quae autem tempore officiis. Enim sint et id dolor eaque.&quot;,
+                    &quot;dlcName&quot;: &quot;Fix San&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Hatity&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sapiente voluptatibus nobis. Dolor quo blanditiis eum. Quis officia necessitatibus ab incidunt. Illum rem eveniet magni sit atque.&quot;,
+                    &quot;dlcName&quot;: &quot;Tresom&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Sonsing&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tempora ad illum fuga est. Suscipit sunt a delectus aut dolorum totam. Sed omnis eligendi sapiente sit dolorem doloremque qui. Magnam et exercitationem.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Voltsillam&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et officia sint dolores eligendi et. Nulla et in molestias nobis. Et illum officia impedit voluptas alias. Necessitatibus repudiandae exercitationem alias est quis placeat nesciunt.&quot;,
+                    &quot;dlcName&quot;: &quot;Biodex&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 51.09,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Daltfresh&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Stealth&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 85.88,
+            &quot;publish_date&quot;: &quot;2024-03-30T20:03:22.991Z&quot;,
+            &quot;rating&quot;: 6,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;iOS 17&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;Intel Arc A750&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;compress&quot;,
+                &quot;back up&quot;,
+                &quot;index&quot;
+            ],
+            &quot;title&quot;: &quot;Halo 2&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.et7&quot;,
+    &quot;pass&quot;: &quot;5succd4wfbc06ql&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Goldner, Sipes and Murazik&quot;,
+            &quot;description&quot;: &quot;Amet atque sequi exercitationem nihil. Soluta commodi ut sed. Aut exercitationem quo nulla sint voluptatem.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Nostrum aliquid consequatur veniam architecto veniam ut. Natus sit saepe quae autem tempore officiis. Enim sint et id dolor eaque.&quot;,
+                    &quot;dlcName&quot;: &quot;Fix San&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Hatity&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Sapiente voluptatibus nobis. Dolor quo blanditiis eum. Quis officia necessitatibus ab incidunt. Illum rem eveniet magni sit atque.&quot;,
+                    &quot;dlcName&quot;: &quot;Tresom&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 6,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Sonsing&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Tempora ad illum fuga est. Suscipit sunt a delectus aut dolorum totam. Sed omnis eligendi sapiente sit dolorem doloremque qui. Magnam et exercitationem.&quot;,
+                    &quot;dlcName&quot;: &quot;Trippledex&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Voltsillam&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Et officia sint dolores eligendi et. Nulla et in molestias nobis. Et illum officia impedit voluptas alias. Necessitatibus repudiandae exercitationem alias est quis placeat nesciunt.&quot;,
+                    &quot;dlcName&quot;: &quot;Biodex&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 51.09,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Daltfresh&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Stealth&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 85.88,
+            &quot;publish_date&quot;: &quot;2024-03-30T20:03:22.991Z&quot;,
+            &quot;rating&quot;: 6,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;iOS 17&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;Intel Arc A750&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;compress&quot;,
+                &quot;back up&quot;,
+                &quot;index&quot;
+            ],
+            &quot;title&quot;: &quot;Halo 2&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.et7&quot;,
+    &quot;pass&quot;: &quot;5succd4wfbc06ql&quot;
+}&#39;
+</div>
