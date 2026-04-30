@@ -41,17 +41,11 @@ jobs:
         with: 
           allure_results: allure-results 
           allure_report: allure-report
-
-      - name: Prepare report for deploy
-        run: |
-          mkdir public
-          cp -r allure-report/* public/
-          touch public/.nojekyll
       
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
+      - name: Deploy to GitHub Pages 
+        uses: peaceiris/actions-gh-pages@v4   
+        with:   
+          github_token: ${{ secrets.GITHUB_TOKEN }} 
           publish_branch: gh-pages
-          force_orphan: true
+          publish_dir: allure-history
+         
