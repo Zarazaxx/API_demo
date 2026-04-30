@@ -1,7 +1,5 @@
 package utils;
-
 import io.restassured.response.Response;
-
 import models.LoginRequest;
 import models.UserRequest;
 import spec.BaseApi;
