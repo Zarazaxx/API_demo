@@ -39,6 +39,7 @@ jobs:
       - name: Generate report 
         uses: simple-elf/allure-report-action@master 
         with: 
+          gh_pages: gh-pages
           allure_results: allure-results 
           allure_report: allure-report
       
