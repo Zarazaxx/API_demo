@@ -36,16 +36,22 @@ jobs:
           name: allure-results
           path: allure-results
 
-      - name: Generate Allure report
-        run: |
-          wget https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.24.0/allure-commandline-2.24.0.zip
-          unzip allure-commandline-2.24.0.zip
-          ./allure-2.24.0/bin/allure generate allure-results -o allure-report
-      - name: Debug
-        run: ls -R
+      - name: Generate report 
+        uses: simple-elf/allure-report-action@master 
+        with: 
+          allure_results: allure-results 
+          allure_report: allure-report
 
+      - name: Prepare report for deploy
+        run: |
+          mkdir public
+          cp -r allure-report/* public/
+          touch public/.nojekyll
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
+          publish_dir: public
+          publish_branch: gh-pages
+          force_orphan: true
