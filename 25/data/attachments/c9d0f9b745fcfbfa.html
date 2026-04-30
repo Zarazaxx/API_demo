@@ -1,0 +1,124 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Rodriguez and Sons&quot;,
+            &quot;description&quot;: &quot;Ipsum unde libero. Perferendis quidem voluptas autem nam consequatur deserunt incidunt. Tempore similique eaque mollitia accusantium ut labore. Dolorum velit voluptas nihil explicabo voluptatum.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Quas eos ad deleniti. Iste nesciunt aut tempora consectetur non. Occaecati temporibus esse quas. Possimus nobis distinctio nemo aspernatur doloremque et omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Zoolab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-find&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Commodi quasi ab illo. Dolor culpa optio qui est.&quot;,
+                    &quot;dlcName&quot;: &quot;Subin&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 49.2,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Vagram&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;First-person shooter&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 2.21,
+            &quot;publish_date&quot;: &quot;2024-02-24T03:56:13.703Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 32,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 4060 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;reboot&quot;,
+                &quot;input&quot;,
+                &quot;back up&quot;
+            ],
+            &quot;title&quot;: &quot;Starcraft II&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.iure826690&quot;,
+    &quot;pass&quot;: &quot;e05pkna4&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Rodriguez and Sons&quot;,
+            &quot;description&quot;: &quot;Ipsum unde libero. Perferendis quidem voluptas autem nam consequatur deserunt incidunt. Tempore similique eaque mollitia accusantium ut labore. Dolorum velit voluptas nihil explicabo voluptatum.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Quas eos ad deleniti. Iste nesciunt aut tempora consectetur non. Occaecati temporibus esse quas. Possimus nobis distinctio nemo aspernatur doloremque et omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Zoolab&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Y-find&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Commodi quasi ab illo. Dolor culpa optio qui est.&quot;,
+                    &quot;dlcName&quot;: &quot;Subin&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 49.2,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Vagram&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;First-person shooter&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 2.21,
+            &quot;publish_date&quot;: &quot;2024-02-24T03:56:13.703Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 32,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 32,
+                &quot;videoCard&quot;: &quot;RTX 4060 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;reboot&quot;,
+                &quot;input&quot;,
+                &quot;back up&quot;
+            ],
+            &quot;title&quot;: &quot;Starcraft II&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.iure826690&quot;,
+    &quot;pass&quot;: &quot;e05pkna4&quot;
+}&#39;
+</div>

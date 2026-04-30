@@ -1,0 +1,168 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Labadie, Graham and Lebsack&quot;,
+            &quot;description&quot;: &quot;Fugit excepturi saepe ad. Cupiditate porro ut quasi accusamus.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Earum provident quo nemo id. Adipisci nobis at temporibus facere voluptas.&quot;,
+                    &quot;dlcName&quot;: &quot;Hatity&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Konklux&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Fugiat ducimus aliquam dicta quis dolores qui. Iure laborum tenetur dicta nihil. Quis modi explicabo vel. Repellat beatae laborum repudiandae.&quot;,
+                    &quot;dlcName&quot;: &quot;Domainer&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Velit cupiditate soluta id aut assumenda autem. Natus aut et et magnam.&quot;,
+                    &quot;dlcName&quot;: &quot;Mat Lam Tam&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Flexidy&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Velit in modi porro autem tenetur impedit. Dolorum eligendi sed est. Esse voluptas repudiandae et nulla enim.&quot;,
+                    &quot;dlcName&quot;: &quot;Andalax&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitwolf&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Hack and slash&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-01-28T06:50:06.930Z&quot;,
+            &quot;rating&quot;: 4,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 20,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 4,
+                &quot;videoCard&quot;: &quot;RX 7600&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;bypass&quot;,
+                &quot;navigate&quot;,
+                &quot;index&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon SoulSilver&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.recusandae3542&quot;,
+    &quot;pass&quot;: &quot;bl4o56l6lppcy&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Labadie, Graham and Lebsack&quot;,
+            &quot;description&quot;: &quot;Fugit excepturi saepe ad. Cupiditate porro ut quasi accusamus.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Earum provident quo nemo id. Adipisci nobis at temporibus facere voluptas.&quot;,
+                    &quot;dlcName&quot;: &quot;Hatity&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Konklux&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Fugiat ducimus aliquam dicta quis dolores qui. Iure laborum tenetur dicta nihil. Quis modi explicabo vel. Repellat beatae laborum repudiandae.&quot;,
+                    &quot;dlcName&quot;: &quot;Domainer&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Velit cupiditate soluta id aut assumenda autem. Natus aut et et magnam.&quot;,
+                    &quot;dlcName&quot;: &quot;Mat Lam Tam&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 2,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Flexidy&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Velit in modi porro autem tenetur impedit. Dolorum eligendi sed est. Esse voluptas repudiandae et nulla enim.&quot;,
+                    &quot;dlcName&quot;: &quot;Andalax&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bitwolf&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Hack and slash&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-01-28T06:50:06.930Z&quot;,
+            &quot;rating&quot;: 4,
+            &quot;requiredAge&quot;: true,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 20,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 4,
+                &quot;videoCard&quot;: &quot;RX 7600&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;bypass&quot;,
+                &quot;navigate&quot;,
+                &quot;index&quot;
+            ],
+            &quot;title&quot;: &quot;Pokémon SoulSilver&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.recusandae3542&quot;,
+    &quot;pass&quot;: &quot;bl4o56l6lppcy&quot;
+}&#39;
+</div>

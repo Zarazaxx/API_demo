@@ -1,0 +1,212 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Reynolds, Beier and Runolfsdottir&quot;,
+            &quot;description&quot;: &quot;Magni non est minus ipsam blanditiis. Harum aliquam dolor. Libero aliquam sed in facere esse.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Minus aut magnam. Aperiam dolor libero neque eveniet. Eos fugit iste beatae architecto quasi.&quot;,
+                    &quot;dlcName&quot;: &quot;Sonsing&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Flexidy&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Porro et harum nesciunt eligendi excepturi libero. Rerum consequuntur dolor tenetur. Repellat enim nemo hic quos expedita repellat quo. Omnis ab voluptates et molestias esse.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zathin&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Nemo ut ipsum ut. Illo dolorum maxime architecto.&quot;,
+                    &quot;dlcName&quot;: &quot;Flexidy&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 69.91,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Latlux&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Nostrum iusto nostrum voluptatem aperiam et dolore. Laudantium ducimus et perspiciatis qui minima odio.&quot;,
+                    &quot;dlcName&quot;: &quot;Temp&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 14.31,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Asoka&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Modi molestias dolores id. Fugit rem rerum consectetur temporibus. Et cumque consequuntur at provident distinctio.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 9.53,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Asoka&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Qui autem et in in in officia vero. Et aliquid vel ut enim hic rerum asperiores. Officiis nobis est laboriosam delectus.&quot;,
+                    &quot;dlcName&quot;: &quot;Zaam-Dox&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bytecard&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Puzzle&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-04-17T01:40:46.985Z&quot;,
+            &quot;rating&quot;: 3,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;Windows 11&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 4060&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;quantify&quot;,
+                &quot;program&quot;,
+                &quot;compress&quot;
+            ],
+            &quot;title&quot;: &quot;Doom 3: BFG&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.accusantium411&quot;,
+    &quot;pass&quot;: &quot;u6vfaejxs92yb&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Reynolds, Beier and Runolfsdottir&quot;,
+            &quot;description&quot;: &quot;Magni non est minus ipsam blanditiis. Harum aliquam dolor. Libero aliquam sed in facere esse.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Minus aut magnam. Aperiam dolor libero neque eveniet. Eos fugit iste beatae architecto quasi.&quot;,
+                    &quot;dlcName&quot;: &quot;Sonsing&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 1,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Flexidy&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Porro et harum nesciunt eligendi excepturi libero. Rerum consequuntur dolor tenetur. Repellat enim nemo hic quos expedita repellat quo. Omnis ab voluptates et molestias esse.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 3,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Zathin&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Nemo ut ipsum ut. Illo dolorum maxime architecto.&quot;,
+                    &quot;dlcName&quot;: &quot;Flexidy&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 69.91,
+                    &quot;rating&quot;: 4,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Latlux&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Nostrum iusto nostrum voluptatem aperiam et dolore. Laudantium ducimus et perspiciatis qui minima odio.&quot;,
+                    &quot;dlcName&quot;: &quot;Temp&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 14.31,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Asoka&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Modi molestias dolores id. Fugit rem rerum consectetur temporibus. Et cumque consequuntur at provident distinctio.&quot;,
+                    &quot;dlcName&quot;: &quot;Stringtough&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 9.53,
+                    &quot;rating&quot;: 7,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Asoka&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Qui autem et in in in officia vero. Et aliquid vel ut enim hic rerum asperiores. Officiis nobis est laboriosam delectus.&quot;,
+                    &quot;dlcName&quot;: &quot;Zaam-Dox&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 5,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Bytecard&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Puzzle&quot;,
+            &quot;isFree&quot;: true,
+            &quot;price&quot;: 0.0,
+            &quot;publish_date&quot;: &quot;2022-04-17T01:40:46.985Z&quot;,
+            &quot;rating&quot;: 3,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 7,
+                &quot;osName&quot;: &quot;Windows 11&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 4060&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;quantify&quot;,
+                &quot;program&quot;,
+                &quot;compress&quot;
+            ],
+            &quot;title&quot;: &quot;Doom 3: BFG&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.accusantium411&quot;,
+    &quot;pass&quot;: &quot;u6vfaejxs92yb&quot;
+}&#39;
+</div>

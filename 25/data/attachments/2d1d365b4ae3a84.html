@@ -1,0 +1,124 @@
+<div>POST to http://85.192.34.140:8080/api/signup</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Conroy, Homenick and Ritchie&quot;,
+            &quot;description&quot;: &quot;Saepe non sequi vero asperiores est vel blanditiis. Aut facere repellendus incidunt nihil error. Eum atque sed ullam ipsum quam molestiae.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Officiis tempora modi necessitatibus corrupti. Suscipit fuga ut et omnis omnis mollitia omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Fix San&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 8,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tresom&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Neque minus provident autem. Consequatur fugiat possimus ab nam deleniti eaque quam. Voluptatum saepe omnis quos non est unde fugit. Numquam est libero voluptas sunt voluptatum similique.&quot;,
+                    &quot;dlcName&quot;: &quot;Regrant&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 70.27,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Action role-playing&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 7.38,
+            &quot;publish_date&quot;: &quot;2026-04-04T18:05:54.319Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 47,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 4060 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;bypass&quot;,
+                &quot;transmit&quot;,
+                &quot;copy&quot;
+            ],
+            &quot;title&quot;: &quot;Civilization VI&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.ipsum2946&quot;,
+    &quot;pass&quot;: &quot;805xottn3mw&quot;
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://85.192.34.140:8080/api/signup&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;games&quot;: [
+        {
+            &quot;company&quot;: &quot;Conroy, Homenick and Ritchie&quot;,
+            &quot;description&quot;: &quot;Saepe non sequi vero asperiores est vel blanditiis. Aut facere repellendus incidunt nihil error. Eum atque sed ullam ipsum quam molestiae.&quot;,
+            &quot;dlcs&quot;: [
+                {
+                    &quot;description&quot;: &quot;DLS Officiis tempora modi necessitatibus corrupti. Suscipit fuga ut et omnis omnis mollitia omnis.&quot;,
+                    &quot;dlcName&quot;: &quot;Fix San&quot;,
+                    &quot;isDlcFree&quot;: true,
+                    &quot;price&quot;: 0.0,
+                    &quot;rating&quot;: 8,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Tresom&quot;,
+                        &quot;isFree&quot;: true
+                    }
+                },
+                {
+                    &quot;description&quot;: &quot;DLS Neque minus provident autem. Consequatur fugiat possimus ab nam deleniti eaque quam. Voluptatum saepe omnis quos non est unde fugit. Numquam est libero voluptas sunt voluptatum similique.&quot;,
+                    &quot;dlcName&quot;: &quot;Regrant&quot;,
+                    &quot;isDlcFree&quot;: false,
+                    &quot;price&quot;: 70.27,
+                    &quot;rating&quot;: 9,
+                    &quot;similarDlc&quot;: {
+                        &quot;dlcNameFromAnotherGame&quot;: &quot;Redhold&quot;,
+                        &quot;isFree&quot;: false
+                    }
+                }
+            ],
+            &quot;gameId&quot;: null,
+            &quot;genre&quot;: &quot;Action role-playing&quot;,
+            &quot;isFree&quot;: false,
+            &quot;price&quot;: 7.38,
+            &quot;publish_date&quot;: &quot;2026-04-04T18:05:54.319Z&quot;,
+            &quot;rating&quot;: 7,
+            &quot;requiredAge&quot;: false,
+            &quot;requirements&quot;: {
+                &quot;hardDrive&quot;: 47,
+                &quot;osName&quot;: &quot;Android 14&quot;,
+                &quot;ramGb&quot;: 8,
+                &quot;videoCard&quot;: &quot;RTX 4060 Ti&quot;
+            },
+            &quot;tags&quot;: [
+                &quot;bypass&quot;,
+                &quot;transmit&quot;,
+                &quot;copy&quot;
+            ],
+            &quot;title&quot;: &quot;Civilization VI&quot;
+        }
+    ],
+    &quot;login&quot;: &quot;autotest.ipsum2946&quot;,
+    &quot;pass&quot;: &quot;805xottn3mw&quot;
+}&#39;
+</div>
